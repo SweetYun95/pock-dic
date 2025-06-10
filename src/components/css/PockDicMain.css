@@ -3,14 +3,13 @@ body {
    background-color: #f9f9f9;
    margin: 0;
    padding: 0;
-   overflow-x: hidden;
 }
 
 /* 컨테이너 정렬 */
 div {
+   overflow-x: hidden;
    width: 100%;
-   margin: 20px auto;
-   padding: 20px;
+   margin: 0 auto;
    background: white;
    border-radius: 20px;
    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
@@ -35,7 +34,7 @@ button {
 ul {
    list-style: none;
    margin: 20px auto 0;
-   padding: 0;
+   padding: 20px;
    display: grid;
    grid-template-columns: repeat(4, 1fr);
    gap: 20px;

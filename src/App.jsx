@@ -9,6 +9,7 @@ function App() {
 
    const Pocknames = ['구구', '꼬부기', '나옹', '두두', '디그다', '모다피', '버터플', '이상해씨', '치코리타', '파이리', '푸린', '피카츄']
 
+   // 카드 추가
    const handleAdd = () => {
       const name = input.trim()
       if (!name) return
@@ -26,6 +27,7 @@ function App() {
       setInput('')
    }
 
+   // 카드 삭제
    const handleRemove = useCallback((name) => {
       setDisabledCards((disabled) => {
          if (disabled.includes(name)) {
@@ -37,6 +39,7 @@ function App() {
       })
    }, [])
 
+   // 카드 활성/비활화
    const toggleDisable = useCallback((name) => {
       setDisabledCards((prev) => (prev.includes(name) ? prev.filter((card) => card !== name) : [...prev, name]))
    }, [])
