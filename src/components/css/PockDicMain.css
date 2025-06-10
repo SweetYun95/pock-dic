@@ -1,0 +1,50 @@
+/* 전체 배경과 글자 설정 */
+body {
+   background-color: #f9f9f9;
+   margin: 0;
+   padding: 0;
+   overflow-x: hidden;
+}
+
+/* 컨테이너 정렬 */
+div {
+   width: 100%;
+   margin: 20px auto;
+   padding: 20px;
+   background: white;
+   border-radius: 20px;
+   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+   text-align: center;
+}
+
+input {
+   padding: 8px;
+   width: 200px;
+   margin-right: 10px;
+}
+
+button {
+   padding: 8px 12px;
+   background: gold;
+   border: none;
+   border-radius: 6px;
+   cursor: pointer;
+}
+
+/* 추가 - 카드 리스트 감싸는 ul 스타일 */
+ul {
+   list-style: none;
+   margin: 20px auto 0;
+   padding: 0;
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   gap: 20px;
+   justify-items: center;
+   max-width: 800px; /* 필요 시 늘리기 */
+}
+
+ul li {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
